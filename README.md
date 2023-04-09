@@ -55,3 +55,6 @@ Future<User> getUser(int userId) async {
 }
 
 ```
+
+### License
+This repository is licensed under the MIT License. See the [LICENSE](https://github.com/EncryptedEasty/dart-snippets/blob/main/LICENSE) file for more information.
