@@ -27,6 +27,7 @@ Future<T> get<T>(String url) async {
       throw HttpException(error.toString());
     } on HttpException catch (errorMessage) {
       print(errorMessage);
+      throw errorMessage;
     }
   } else {
     throw Exception('URL is empty');
