@@ -33,7 +33,6 @@ Future<T> get<T>(String url) async {
   }
 }
 
-
 Future<T> post<T>(String url) async {
   if (url.trim().isNotEmpty) {
     return (T as dynamic)
@@ -69,4 +68,3 @@ Future<T> delete<T>(String url) async {
     throw Exception('URL is empty');
   }
 }
-
