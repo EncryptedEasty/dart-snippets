@@ -1,7 +1,7 @@
 import 'dart:ui';
 
 extension HexColor on Color {
-  static Color fromHexString(String hexString) {
+  static Color fromHex(String hexString) {
     final buffer = StringBuffer();
     if (hexString.length == 6 || hexString.length == 7) buffer.write('ff');
     buffer.write(hexString.replaceFirst('#', ''));
@@ -9,7 +9,7 @@ extension HexColor on Color {
   }
 
   /// Prefixes a hash sign if [leadingHashSign] is set to `true` (default is `true`).
-  String toHexString({bool leadingHashSign = true}) =>
+  String toHex({bool leadingHashSign = true}) =>
       '${leadingHashSign ? '#' : ''}'
       '${alpha.toRadixString(16).padLeft(2, '0')}'
       '${red.toRadixString(16).padLeft(2, '0')}'
