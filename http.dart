@@ -26,7 +26,6 @@ Future<T> get<T>(String url) async {
     } on SocketException catch (error) {
       throw HttpException(error.toString());
     } on HttpException catch (errorMessage) {
-      print(errorMessage);
       throw errorMessage;
     }
   } else {
