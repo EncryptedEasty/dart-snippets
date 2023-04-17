@@ -45,7 +45,7 @@ String hexString = color.toHex(); // returns '#FF0000'
 
 ---
 
-#### HTTP Request functions
+#### :warning: HTTP Request functions [Experimental]
 
 These functions use the `http` package to make HTTP requests and return the response as a specified data type. The `get()`, `post()`, `patch()`, `put()`, and `delete()` functions each take a URL as an argument and send an HTTP request with the corresponding method. The response is checked for errors, and if successful, the response body is decoded and converted to an object of the specified type using the `fromJson()` method, which must be implemented by the corresponding class. These functions provide a convenient and type-safe way to make HTTP requests in a Flutter application.
 
