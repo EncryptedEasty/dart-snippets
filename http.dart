@@ -17,11 +17,11 @@ Future<T> get<T>(String url) async {
           if (body != null) {
             throw HttpException(body.message);
           } else {
-            throw HttpException('test');
+            throw const HttpException('An unknown error occurred');
           }
         }
       } else {
-        throw HttpException('test');
+        throw const HttpException('An unknown error occurred');
       }
     } on SocketException catch (error) {
       throw HttpException(error.toString());
